@@ -1,1 +1,1 @@
-npx pm2 serve --spa
+pm2 serve --spa
