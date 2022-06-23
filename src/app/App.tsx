@@ -1,23 +1,33 @@
-import logo from "../logo.svg";
+import { Routes, Route, Link } from "react-router-dom";
+import FirstPage from "../features/FirstPage";
+import Home from "../features/Home";
+import SecondPage from "../features/SecondPage";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <nav>
+          <Link className="is-block" to="/">
+            Home
+          </Link>
+          <Link className="is-block" to="/firstPage">
+            First Page
+          </Link>
+          <Link className="is-block" to="/secondPage">
+            Second Page
+          </Link>
+        </nav>
       </header>
-    </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="firstPage" element={<FirstPage />} />
+          <Route path="secondPage" element={<SecondPage />} />
+        </Routes>
+      </main>
+      <footer />
+    </>
   );
 };
 
