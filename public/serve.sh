@@ -1,2 +1,1 @@
-cd /home/site/wwwroot
-pm2 serve --spa
+pm2 serve /home/site/wwwroot --no-daemon --spa
