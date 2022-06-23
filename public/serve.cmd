@@ -1,2 +1,1 @@
-npm install -g serve
-serve -s build
+npx pm2 serve --spa
