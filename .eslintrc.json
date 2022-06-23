@@ -1,6 +1,22 @@
 {
-  "extends": ["react-app", "react-app/jest", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:all",
+    "plugin:@typescript-eslint/all",
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": [2]
+    "one-var": [0],
+    "@typescript-eslint/naming-convention": [
+      2,
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+      }
+    ]
+  },
+  "parserOptions": {
+    "project": ["tsconfig.json"]
   }
 }

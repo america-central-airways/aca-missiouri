@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import FirstPage from "../features/FirstPage";
 import Home from "../features/Home";
 import SecondPage from "../features/SecondPage";
