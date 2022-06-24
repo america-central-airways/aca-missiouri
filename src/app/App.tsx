@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <main>
         <Routes>
           <Route element={<Home />} path="/" />
-          <Route element={<FirstPage />} path="firstPage" />
+          <Route element={<FirstPage isPrimary />} path="firstPage" />
           <Route element={<SecondPage />} path="secondPage" />
         </Routes>
       </main>
