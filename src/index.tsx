@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 
-const element = document.getElementById("root");
+const element = document.querySelector("#root");
 
 if (element) {
   const root = ReactDOM.createRoot(element);

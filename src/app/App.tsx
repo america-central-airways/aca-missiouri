@@ -21,9 +21,9 @@ const App: React.FC = () => {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="firstPage" element={<FirstPage />} />
-          <Route path="secondPage" element={<SecondPage />} />
+          <Route element={<Home />} path="/" />
+          <Route element={<FirstPage />} path="firstPage" />
+          <Route element={<SecondPage />} path="secondPage" />
         </Routes>
       </main>
       <footer />
