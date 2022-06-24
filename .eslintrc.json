@@ -6,11 +6,12 @@
     "plugin:react/all",
     "plugin:react/jsx-runtime",
     "plugin:unicorn/recommended",
+    "plugin:promise/recommended",
     "plugin:jsx-a11y/strict",
     "react-app/jest",
-    "plugin:jest/recommended",
+    "plugin:jest/all",
     "plugin:testing-library/react",
-    "plugin:jest-dom/recommended",
+    "plugin:jest-dom/all",
     "plugin:prettier/recommended"
   ],
   "rules": {
@@ -42,6 +43,11 @@
         "case": "pascalCase",
         "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
       }
+    ],
+    "promise/prefer-await-to-then": [2],
+    "jest/prefer-expect-assertions": [
+      2,
+      { "onlyFunctionsWithAsyncKeyword": true }
     ]
   },
   "parserOptions": {
