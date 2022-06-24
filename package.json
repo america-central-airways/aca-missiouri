@@ -45,6 +45,10 @@
         "lines": 90,
         "statements": -10
       }
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "index.tsx",
+      "reportWebVitals.ts"
+    ]
   }
 }
